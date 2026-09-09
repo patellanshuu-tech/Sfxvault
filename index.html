@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+::-webkit-scrollbar{display:none;}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1e2024", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#004f53", "surface-container-highest": "#333539", "surface": "#111317", "background": "#111317", "secondary": "#dbb8ff", "error-container": "#93000a", "secondary-fixed": "#efdbff", "on-surface-variant": "#b9cacb", "primary-fixed-dim": "#00dce6", "tertiary-fixed": "#ffdbd1", "surface-container-low": "#1a1c20", "on-primary-container": "#006a70", "on-tertiary-fixed-variant": "#862200", "primary-fixed": "#6ff6ff", "surface-container-high": "#282a2e", "on-surface": "#e2e2e8", "on-tertiary": "#5f1500", "primary-container": "#00f2fe", "surface-tint": "#00dce6", "on-secondary": "#470083", "inverse-surface": "#e2e2e8", "surface-variant": "#333539", "tertiary": "#fff6f3", "surface-container-lowest": "#0c0e12", "on-primary-fixed": "#002022", "on-secondary-container": "#d0a6ff", "outline": "#849495", "surface-dim": "#111317", "error": "#ffb4ab", "primary": "#e0fdff", "tertiary-fixed-dim": "#ffb5a0", "outline-variant": "#3a494b", "on-background": "#e2e2e8", "surface-bright": "#37393e", "secondary-container": "#6807ba", "on-tertiary-fixed": "#3b0900", "secondary-fixed-dim": "#dbb8ff", "inverse-on-surface": "#2f3035", "tertiary-container": "#ffd1c4", "on-error": "#690005", "on-secondary-fixed-variant": "#6600b7", "on-primary": "#00373a", "on-secondary-fixed": "#2b0052", "inverse-primary": "#00696f", "on-tertiary-container": "#b23000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "0.75rem", "gutter-mobile": "0.75rem", "player-dock-height": "4.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-xxs": "0.125rem", "space-base": "1rem", "space-3xl": "4rem", "sidebar-width": "16rem", "gutter-desktop": "1.25rem" }, "fontFamily": { "body-md": ["Geist"], "headline-xl": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-lg": ["Geist"], "label-code": ["JetBrains Mono"], "label-meter": ["JetBrains Mono"], "label-badge": ["JetBrains Mono"], "body-sm": ["Geist"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-code": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-meter": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-badge": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }]} } } };</script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+<div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<img alt="EditSounds Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VhIJVI24HymqvtQhpbGmFCpMbg1LjqPMRU94cM3lNCjKcdXBzhslk8ecgn_RJkmZnH92ODUDW26SIcHCm0RsVM_5B153y1WviQZgcwhapDIwSjI75SWfDVIeh-7_QRC9LH7bMkJHYLjVXDACjGiUMfWuJp0puN3twV9VB8GB5mXTL-aiOsb_qPSgVo6gsaWxC5j5NPhLYNtAeZrun8656WlqV8powjmCr9YAa0J52ySNM_s09jUvtZzWY"/>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">EditSounds</span>
+</div>
+<nav class="hidden lg:flex items-center gap-space-base">
+<a class="transition-colors text-primary font-medium" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Categories (74)</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Trending 🔥</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Favorites ❤️</a>
+</nav>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="flex items-center gap-space-xs px-space-md py-space-xs bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold rounded-lg shadow-[0_0_12px_rgba(0,242,254,0.2)] hover:bg-primary-fixed transition-all" href="#">
+<span class="material-symbols-outlined text-[16px]">add</span><span>Upload Sounds</span>
+</a>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+</div>
+</div>
+</header>
+
+<main class="w-full pt-16 pb-player-dock-height bg-surface">
+<div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-20 right-10 w-[380px] h-[260px] bg-secondary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+<section class="relative w-full max-w-7xl mx-auto px-gutter-desktop pt-space-2xl pb-space-3xl flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xxs rounded-full bg-surface-container-high shadow-sm mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-primary">Engineered For Studio & NLE Timelines</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary max-w-4xl tracking-tight leading-[1.08] mb-space-base">Find the perfect sound for your edit</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-2xl">Thousands of royalty-free sound effects, whooshes, cinematic impacts & transitions engineered for video editors and creators.</p>
+
+<div class="w-full max-w-3xl flex flex-col gap-space-md">
+<div class="relative flex items-center bg-surface-container-low rounded-xl shadow-xl p-space-xs transition-all focus-within:ring-2 focus-within:ring-primary-container">
+<div class="pl-space-md pr-space-xs text-on-surface-variant flex items-center"><span class="material-symbols-outlined text-[24px]">search</span></div>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none py-space-sm" id="hero-sfx-search" placeholder="Search 10,000+ sounds like whoosh, riser, cinematic boom, pop..." type="text"/>
+<div class="hidden sm:flex items-center gap-space-xs pr-space-xs">
+<span class="px-space-xs py-space-xxs bg-surface-container rounded font-label-code text-label-code text-outline">⌘K</span>
+<button id="findBtn" class="px-space-lg py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold rounded-lg hover:bg-primary-fixed transition-all flex items-center gap-space-xs shadow-[0_0_16px_rgba(0,242,254,0.25)]"><span>Find</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-xs pt-space-xs">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline-variant mr-space-xs">Quick Tags:</span>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Whoosh</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Transition</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Glitch</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Cinematic</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Horror</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Notification</button>
+<button class="tag px-space-md py-space-xxs rounded-full bg-surface-container-high text-on-surface">Pop</button>
+</div>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md w-full max-w-4xl mt-space-2xl">
+<div class="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low"><span class="font-headline-md text-headline-md text-primary">74</span><span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Sound Categories</span></div>
+<div class="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low"><span class="font-headline-md text-headline-md text-primary">10,000+</span><span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Curated SFX</span></div>
+<div class="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low"><span class="font-headline-md text-headline-md text-primary">WAV & MP3</span><span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Lossless Quality</span></div>
+<div class="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-xxs"><span class="material-symbols-outlined text-primary text-[22px]">verified</span><span class="font-headline-md text-headline-md text-primary">100%</span></div><span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant">Royalty Free</span></div>
+</div>
+</section>
+</div>
+
+<section class="w-full max-w-7xl mx-auto px-gutter-desktop py-space-xl">
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-sm"><h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Trending Sounds</h2><span class="px-space-sm py-space-xxs rounded-full bg-error-container/30 text-error font-label-badge uppercase flex items-center gap-space-xxs"><span class="material-symbols-outlined text-[14px]">local_fire_department</span> Hot</span></div>
+<a class="group flex items-center gap-space-xs font-headline-sm text-body-md text-primary" href="#">View all trending <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+
+<div id="soundGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg"></div>
+</section>
+
+<section class="w-full max-w-7xl mx-auto px-gutter-desktop py-space-2xl">
+<div class="flex items-center justify-between mb-space-lg"><div class="flex items-center gap-space-sm"><h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Most Downloaded SFX ⚡</h2><span class="px-space-sm py-space-xxs rounded-full bg-surface-container text-on-surface-variant font-label-badge uppercase">Browse library</span></div><span class="font-label-code text-label-code text-on-surface-variant">Sorted by total audio exports</span></div>
+<div id="downloadList" class="flex flex-col bg-surface-container-low rounded-xl shadow-md overflow-hidden"></div>
+</section>
+
+<section class="w-full max-w-7xl mx-auto px-gutter-desktop py-space-2xl">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 p-space-2xl shadow-2xl text-white">
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col text-left max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xxs rounded-full bg-white/20 self-start mb-space-md"><span class="material-symbols-outlined text-[16px] text-white">send</span><span class="font-label-badge text-label-badge uppercase tracking-wider text-white">Exclusive Daily SFX Drops</span></div>
+<h2 class="font-headline-xl text-headline-lg lg:text-headline-xl text-white tracking-tight leading-tight mb-space-sm">Join the VIP Editor Community on Telegram 🚀</h2>
+<p class="font-body-lg text-body-lg text-white/90 leading-relaxed">Get instant daily drops of exclusive SFX packs, sound packs, video editing assets, and tutorials directly on Telegram.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md flex-shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md bg-white text-slate-900 font-headline-sm text-body-lg font-bold rounded-xl shadow-xl hover:bg-slate-100 transition-all" href="https://t.me/edittorkakhajana" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px] text-blue-600">send</span><span>Join Telegram Channel @edittorkakhajana</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="w-full max-w-7xl mx-auto px-gutter-desktop pb-space-3xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low p-space-xl flex flex-col justify-end min-h-[220px]">
+<div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD8811q8I8y4ALQF7RshQa3UsMnVllsqRSU4_OIc9LIoE4Qv5z4-QlgurNRLIioz20YWzTBOs7wlwlbuAKMVu32UooBQxJg6z2Zjm1j_ODuVj0VV-OXzp7ohAC_I7DOrSFyybBfdx_VtMWMlqyzOILEV6cwjvtw50r0x8UUPELdCqyu3mSw2kQwJ6lhGZAS_RoiRADWFGCypiW-CbGap8m3ruF-zVjlDhR4ViNjVzjHUAG9_3cYB-v')"></div>
+<div class="relative z-10"><span class="font-label-badge text-label-badge uppercase tracking-wider text-primary">Mastered for Filmmakers</span><h3 class="font-headline-md text-headline-md text-on-surface mt-space-xxs">Studio-Grade 96kHz Transients</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-md">Every audio file is phase-aligned, tuned, and clean-clipped to ensure instant drag-and-drop clarity across Premiere Pro, DaVinci Resolve, and Final Cut.</p></div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low p-space-xl flex flex-col justify-end min-h-[220px]">
+<div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqlPPGNNhkZvPEj9NwZ6KX2dBiT5zivXkYoawMBIK_dkE-r8W0svLseIq3_tj62jWbFFKfGsK3RPC_UMQVHepJN7c_OGaL8mCP7ObxGPQQJR3fxPsCdxeF7q5Wxq6W7zDe32qEdsM9wwcqGNrRKVl5FG0avCgJCEVuVhcQ9nXsnssuuU_r1xdgvdHDCXHqXSK5I4FA3wYkl3XKnC8I31B8QaqrKLwhAdORA_wZWgSSid_1ayQ7E5-S')"></div>
+<div class="relative z-10"><span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">Zero Copyright Hassle</span><h3 class="font-headline-md text-headline-md text-on-surface mt-space-xxs">Commercial & Social Cleared</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-md">Monetize YouTube, client projects, commercials, TikToks, and feature films without copyright strikes or Content ID claim flags.</p></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer class="fixed bottom-0 left-0 right-0 z-40 h-player-dock-height bg-surface-container-low/95 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.7)]">
+<div class="h-full w-full px-gutter-desktop flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-[200px] max-w-[260px]"><button id="dockPlay" class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_12px_rgba(0,242,254,0.3)]"><span class="material-symbols-outlined text-[20px]">play_arrow</span></button><div class="flex flex-col truncate"><span id="dockTitle" class="font-headline-sm text-body-sm text-on-surface truncate">Cinematic Sub Impact 04</span><span class="font-label-badge text-label-badge text-on-surface-variant uppercase">Cinematic Risers • 96kHz</span></div></div>
+<div class="flex-1 max-w-2xl flex items-center gap-space-sm"><span class="font-label-meter text-label-meter text-on-surface-variant w-9 text-right">00:03</span><div class="flex-1 flex items-center gap-space-xxs h-8 bg-surface-container-lowest px-space-xs rounded-lg"><div class="h-4 w-1 bg-primary-container"></div><div class="h-6 w-1 bg-primary-container"></div><div class="h-3 w-1 bg-primary-container"></div><div class="h-7 w-1 bg-primary-container"></div><div class="h-5 w-1 bg-secondary"></div><div class="h-8 w-1 bg-outline-variant"></div><div class="h-4 w-1 bg-outline-variant"></div><div class="h-6 w-1 bg-outline-variant"></div><div class="h-3 w-1 bg-outline-variant"></div><div class="h-5 w-1 bg-outline-variant"></div></div><span class="font-label-meter text-label-meter text-on-surface-variant w-9">00:12</span></div>
+<div class="flex items-center gap-space-md"><button id="dockFav" class="p-space-xs rounded-lg text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">favorite_border</span></button><button id="dockDownload" class="flex items-center gap-space-xxs px-space-sm py-space-xs rounded-lg bg-surface-container-high text-primary"><span class="material-symbols-outlined text-[18px]">download</span><span class="font-label-badge text-label-badge">WAV</span></button></div>
+</div>
+</footer>
+
+<script>
+const sounds = [
+  {name:"Cinematic Sub Boom & Whoosh",category:"Cinematic",duration:"0:04",format:"WAV"},
+  {name:"Digital Cyber Glitch Swish",category:"Glitch",duration:"0:02",format:"MP3"},
+  {name:"Fast Whip Air Transition",category:"Transition",duration:"0:01",format:"WAV"},
+  {name:"Deep Heavy Impact Stomp",category:"Impact",duration:"0:05",format:"WAV"},
+  {name:"Clean UI Pop Click",category:"Pop",duration:"0:01",format:"MP3"},
+  {name:"Horror Drone Tension Riser",category:"Horror",duration:"0:08",format:"WAV"}
+];
+const downloads = [
+  ["Hyperdrive Wind Whoosh","Whooshes","0:02","42.8k"],
+  ["Shepard Pitch Riser Build","Risers","0:06","31.2k"],
+  ["Modern Soft Mouse Click","UI Clicks","0:01","28.5k"],
+  ["Crisp Notification Chime","Alerts","0:01","24.1k"],
+  ["Vintage Camera Shutter Snap","Foley","0:01","19.9k"]
+];
+
+function waveform(){
+  return Array.from({length:14},()=>`<div class="w-1.5 bg-outline-variant rounded-full" style="height:${Math.floor(Math.random()*38)+6}px"></div>`).join("");
+}
+function renderSounds(list=sounds){
+  document.getElementById("soundGrid").innerHTML=list.map((s,i)=>`
+    <div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all group">
+      <div>
+        <div class="flex items-start justify-between gap-space-sm mb-space-sm">
+          <span class="px-space-xs py-space-xxs bg-surface-container-highest rounded font-label-badge uppercase tracking-wider text-on-surface-variant">${s.category}</span>
+          <button class="favBtn text-on-surface-variant p-space-xxs"><span class="material-symbols-outlined text-[20px]">favorite_border</span></button>
+        </div>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface truncate mb-space-xs">${s.name}</h3>
+        <div class="flex items-center gap-space-md text-on-surface-variant font-label-meter text-label-meter mb-space-md"><span>${s.duration} DURATION</span><span>•</span><span>STUDIO QUALITY</span></div>
+      </div>
+      <div class="flex items-center gap-space-xxs h-12 my-space-sm px-space-xs bg-surface-container-lowest rounded-lg overflow-hidden">${waveform()}</div>
+      <div class="flex items-center justify-between pt-space-sm mt-space-xs">
+        <button class="playBtn w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container"><span class="material-symbols-outlined text-[22px]">play_arrow</span></button>
+        <button class="downloadBtn flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">download</span><span class="font-label-badge font-bold uppercase">${s.format}</span></button>
+      </div>
+    </div>`).join("");
+  document.querySelectorAll(".playBtn").forEach((b,i)=>b.onclick=()=>playSound(list[i]));
+  document.querySelectorAll(".downloadBtn").forEach(b=>b.onclick=()=>readyButton(b));
+  document.querySelectorAll(".favBtn").forEach(b=>b.onclick=()=>{b.querySelector("span").textContent="favorite";});
+}
+function renderDownloads(){
+  document.getElementById("downloadList").innerHTML=downloads.map(d=>`
+  <div class="flex items-center justify-between p-space-md hover:bg-surface-container transition-colors">
+    <div class="flex items-center gap-space-md min-w-0 flex-1">
+      <button class="rowPlay w-9 h-9 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">play_arrow</span></button>
+      <div class="flex flex-col min-w-0"><span class="font-body-md text-on-surface font-semibold truncate">${d[0]}</span><span class="font-label-badge text-label-badge text-on-surface-variant uppercase">${d[1]} • ${d[2]}</span></div>
+    </div>
+    <div class="flex items-center gap-space-md flex-shrink-0"><span class="font-label-code text-label-code text-primary font-bold">${d[3]}</span><button class="rowDownload p-space-xs rounded-lg bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-[18px]">file_download</span></button></div>
+  </div>`).join("");
+  document.querySelectorAll(".rowPlay").forEach((b,i)=>b.onclick=()=>playSound({name:downloads[i][0],category:downloads[i][1],duration:downloads[i][2],format:"WAV"}));
+  document.querySelectorAll(".rowDownload").forEach(b=>b.onclick=()=>readyButton(b));
+}
+function playSound(s){
+  document.getElementById("dockTitle").textContent=s.name;
+  document.getElementById("dockPlay").querySelector("span").textContent="pause";
+}
+function readyButton(btn){
+  const old=btn.innerHTML;
+  btn.innerHTML='<span class="material-symbols-outlined text-primary">check</span><span class="font-label-badge">READY</span>';
+  setTimeout(()=>btn.innerHTML=old,1800);
+}
+document.getElementById("findBtn").onclick=()=>{
+  const q=document.getElementById("hero-sfx-search").value.trim().toLowerCase();
+  renderSounds(q?sounds.filter(s=>(s.name+" "+s.category).toLowerCase().includes(q)):sounds);
+};
+document.querySelectorAll(".tag").forEach(t=>t.onclick=()=>{document.getElementById("hero-sfx-search").value=t.textContent;document.getElementById("findBtn").click();});
+document.getElementById("dockPlay").onclick=()=>{const x=document.getElementById("dockPlay").querySelector("span");x.textContent=x.textContent==="play_arrow"?"pause":"play_arrow";};
+document.getElementById("dockFav").onclick=()=>{document.querySelector("#dockFav span").textContent="favorite";};
+document.getElementById("dockDownload").onclick=()=>readyButton(document.getElementById("dockDownload"));
+renderSounds();
+renderDownloads();
+</script>
+</body>
+</html>
