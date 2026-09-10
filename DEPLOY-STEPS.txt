@@ -1,0 +1,9 @@
+SFXVault deployment
+1. Upload all files/folders in this ZIP to the ROOT of your GitHub repository.
+2. Vercel should detect Next.js automatically.
+3. In Vercel Settings -> Environment Variables add:
+   DATABASE_URL = your Neon connection string
+   BLOB_READ_WRITE_TOKEN = your Vercel Blob token
+4. Redeploy.
+5. Open the site and use the Upload section.
+Do not upload .env or secrets to GitHub.
