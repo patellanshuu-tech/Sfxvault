@@ -1,7 +1,7 @@
 import { put } from "@vercel/blob";
 import { NextResponse } from "next/server";
-import { pool } from "@/lib/db";
-import { initDb } from "@/lib/init-db";
+import { pool } from "../../../lib/db";
+import { initDb } from "../../../lib/init-db";
 export async function GET(req:Request){
  await initDb(); const u=new URL(req.url), c=u.searchParams.get("category"), t=u.searchParams.get("trending"), q=u.searchParams.get("search");
  const vals:string[]=[]; const wh:string[]=[];
