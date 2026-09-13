@@ -19,7 +19,7 @@ export default function Home(){
    setBusy(false);
  }
 
- useEffect(()=>{if(tab!=="upload")load("",tab,"")},[tab,cat]);
+ useEffect(()=>{if(tab!=="upload")load(tab==="categories"?cat:"",tab,"")},[tab,cat]);
 
  async function upload(e:any){
    e.preventDefault();setMsg("");setBusy(true);
