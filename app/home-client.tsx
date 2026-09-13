@@ -31,7 +31,7 @@ export default function Home(){
    setMsg("Uploaded successfully!");e.currentTarget.reset()
  }
 
- const open=(c:string)=>{setCat(c);setTab("categories")};
+ const open=(c:string)=>{setCat(c);setTab("categories");load(c,"categories","")};
 
  return <>
   <header className="header">
